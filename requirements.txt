@@ -74,4 +74,3 @@ sos
 soupsieve
 SQLAlchemy
 ssh-import-id
-ufw
