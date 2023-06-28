@@ -71,7 +71,7 @@ nav.logo span {
 }
 
 .btn {
-    background: #B3B3B3;
+    background: #714AEB;
     color: #ffffff;
     border-radius: 50px;
     border: none;
@@ -82,8 +82,7 @@ nav.logo span {
 
 }
 .btn:hover, .btn.focus {
-	background: #f3f3f3;
-	color: #B3B3B3;
+	background: #4e25cc;
 	font-weight: bold;
 }
 .subjects {
@@ -135,7 +134,7 @@ footer {
     flex-shrink: 0;
 }
 .recom-box {
-    border: 1px solid #333333;
+    border: 1px solid #BFBFBF;
     border-radius: 5px;
     padding: 1.5rem;
     margin-top: 1.5rem;
@@ -166,9 +165,9 @@ a {
     color: #333333;
     text-decoration: none;
 }
-a:focus, a:hover {
+.subjects_block:focus, .subjects_block:hover {
 	font-weight: bold;
-	background-color: #B3B3B3;
+	background-color: #b6a1f7;
 	color: #fff;
 }
 .recom-content {
@@ -252,11 +251,32 @@ a:focus, a:hover {
 	text-align: center;
 	margin-top: 1rem;
 }
-
+.next {
+	font-size: 25px;
+}
+.next:active, .next:hover {
+	font-weight: bold;
+	background: none;
+	color: #B3B3B3;
+}
+.error {
+	text-align:center;
+	font-size: 25px;
+	padding 2rem 0;
+	font-weight: bold;
+	margin: auto;
+}
+ .subject_p {
+            font-size: 16px;
+    }
 @media only screen and (max-width: 600px) {
     nav.logo {
         font-size: 15px;
 
+    }
+    .error {
+	    font-size: 16px;
+	    padding: 1rem;
     }
     .top-part {
         padding: 0 1rem;
@@ -284,8 +304,15 @@ a:focus, a:hover {
     .subjects h1 {
         font-size: 28px;
     }
+    .subjects {
+	    padding: 1rem;
+    }
     .subjects_block {
         width: 30%;
+	    gap: 9px;
+    }
+    .subject_p {
+	    font-size: 11px;
     }
     .recom-heading {
         font-size: 20px;
@@ -317,7 +344,10 @@ a:focus, a:hover {
         padding: 1rem .5rem;
     }
     .tags {
-        font-size: 9px;
+        font-size: 7px;
+    }
+    .tag-span {
+	    margin: .3rem .3rem 0 0;
     }
     .recom-box {
         padding: .3rem;
@@ -342,11 +372,11 @@ a:focus, a:hover {
         margin: 1rem .5rem;
     }
     .description {
-        padding: .5rem;
+        padding: .5rem 1rem;
     }
     .description > p {
         width: 100%;
-        font-size: 14px;
+        font-size: 13px;
     }
     .genre_title, .genre_heading {
         margin: 1rem;
@@ -357,7 +387,10 @@ a:focus, a:hover {
 }
 .genre_title {
 	font-size: 16px;
-
+}
+.next {
+        font-size: 16px;
+}
 @media only screen and (min-width: 600px) and (max-width: 850px) {
     .recom-holder {
         width: 90%;

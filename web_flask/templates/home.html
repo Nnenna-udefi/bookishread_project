@@ -13,14 +13,16 @@
     <section class="top-part">
         <header>
             <nav class="logo">
-                Bookish<span>Reads</span>
+		    <a href="/">
+                	Bookish<span>Reads</span>
+		    </a>
             </nav>
         </header>
 
         <section class="hero">
             <p class="hero_text1">Are you searching for your next literary adventure?</p>
             <h1>Discover books you'll love</h1>
-            <p class="hero_text2">Enter five a book you’ve read and liked and the site will analyse our huge database of books to provide book recommendations and suggestions for what to read next.</p>
+            <p class="hero_text2">Enter a book you’ve read and liked and the site will analyse our huge database of books to provide book recommendations and suggestions for what to read next.</p>
 
             <form method="POST" action="/recommendations">
                 <input type="text" id="enter" name="book" placeholder="Enter books" class="input"><br><br>
@@ -34,62 +36,62 @@
         <div class="box">
     <a href="{{ url_for('genre_recommendations', genre='Fantasy') }}" class="subjects_block">
         <div>
-            <p>Fantasy</p>
+            <p class='subject_p'>Fantasy</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Childrens') }}" class="subjects_block">
         <div>
-            <p>Children</p>
+            <p class='subject_p'>Children</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Nonfiction') }}" class="subjects_block">
         <div>
-            <p>Non Fiction</p>
+            <p class='subject_p'>Non Fiction</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Fiction') }}" class="subjects_block">
         <div>
-            <p>Fiction</p>
+            <p class='subject_p'>Fiction</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Science Fiction') }}" class="subjects_block">
         <div>
-            <p>Science Fiction</p>
+            <p class='subject_p'>Science Fiction</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Romance') }}" class="subjects_block">
         <div>
-            <p>Romance</p>
+            <p class='subject_p'>Romance</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Adventure') }}" class="subjects_block">
         <div>
-            <p>Adventure</p>
+            <p class='subject_p'>Adventure</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Horror') }}" class="subjects_block">
         <div>
-            <p>Horror</p>
+            <p class='subject_p'>Horror</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Literature') }}" class="subjects_block">
         <div>
-            <p>Literature</p>
+            <p class='subject_p'>Literature</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Historical') }}" class="subjects_block">
         <div>
-            <p>Historical</p>
+            <p class='subject_p'>Historical</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Supernatural') }}" class="subjects_block">
         <div>
-            <p>Supernatural</p>
+            <p class='subject_p'>Supernatural</p>
         </div>
     </a>
     <a href="{{ url_for('genre_recommendations', genre='Feminism') }}" class="subjects_block">
         <div>
-            <p>Feminism</p>
+            <p class='subject_p'>Feminism</p>
         </div>
     </a>
 </div>

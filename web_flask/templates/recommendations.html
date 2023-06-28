@@ -12,13 +12,14 @@
 <body>
     <header>
         <nav class="logo top">
-            Bookish<span>Reads</span>
+		<a href="/">
+            		Bookish<span>Reads</span>
+		</a>
         </nav>
     </header>
 
     <section class="recommendation">
-        <p class="recom-heading">Since you liked those books, here are some books you will equally love:</p>
-
+	    <p class="recom-heading">Since you liked {{ book_input }}, here are some books you will equally love:</p>
     <div class="recom-holder">
         <ul>
 		{% for book in recommendations %}
@@ -35,7 +36,7 @@
 					</div>
 				</div>
 				<div class="link">
-					<a href="/recommendations/book/{{ book.id }}">&gt</a>
+					<a href="/recommendations/book/{{ book.id }}" class="next">&gt</a>
 				</div>
 			</div>
 		</li>

@@ -57,11 +57,11 @@ def recommendations():
             # convert the DataFrame to a list of dictionaries 
             recommendations = recommendations_df.to_dict(orient='records')
                 
-            return render_template('recommendations.html', recommendations=recommendations)
+            return render_template('recommendations.html', recommendations=recommendations, book_input=book_input)
         except KeyError:
             # Handle the case where the book input is not found in the similarity dataframe
             error_message = "Book not found. Please try again."
-            return render_template('recommendations.html', error_message=error_message)
+            return render_template('error.html', error_message=error_message)
 
 
 @app.route('/recommendations/book/<int:book_id>')
@@ -84,9 +84,13 @@ def genre_recommendations(genre):
         specific genre is clicked on
     """
     # Filter the books dataframe based on the selected genre
-    genre_books = books.loc[books['genre'].str.contains(genre, case=False)]
+    genre_books = books[books['genre'].str.contains(genre, case=False)]
 
-    return render_template('genre_recommendations.html', genre=genre, books=genre_books)
+
+    # Sort the DataFrame by rating and select the top 15 books
+    top_15_books = genre_books.sort_values('rating', ascending=False).head(15)
+
+    return render_template('genre_recommendations.html', genre=genre, books=top_15_books)
 
 
 
