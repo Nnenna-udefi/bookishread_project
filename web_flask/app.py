@@ -5,7 +5,7 @@ from flask import Flask, render_template, request
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
-from get_book import get_book_by_id
+from web_flask.get_book import get_book_by_id
 
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 
 # Load the books data into a Pandas dataframe
-books = pd.read_csv('../books_data.csv')
+books = pd.read_csv('books_data.csv')
 
 # Combine the genres for each book into a single string
 genres_combined = books['genre'].apply(lambda x: ' '.join(eval(x)))
