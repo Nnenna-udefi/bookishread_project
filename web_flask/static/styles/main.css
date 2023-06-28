@@ -391,9 +391,9 @@ a {
 .next {
         font-size: 16px;
 }
-@media only screen and (min-width: 600px) and (max-width: 850px) {
+@media (min-width: 610px) and (max-width: 800px) {
     .recom-holder {
-        width: 90%;
+        width: 100%;
     }
     .recom-heading {
         width: 80%;
