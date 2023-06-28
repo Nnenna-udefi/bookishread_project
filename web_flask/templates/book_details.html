@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+    <nav class="logo top">
+        Bookish<span>Reads</span>
+    </nav>
+</header>
+
+<section class="book_content">
+    <div class="go_back">
+	    <!-- <a href="/recommendations">&larr; Back</a> -->
+    </div>
+
+    <div>
+        <div class="recom-box2">
+            <img src="{{ book.cover_image_url }}" alt="cover-img" class="cover-img2">
+            <div class="recom-content">
+                <h1 class="title2">{{ book.title }}</h1>
+                <p class="author2">{{ book.author }}</p>
+                <p class="publication-date">{{ book.publication_date }}</p>
+                <div class="tags">
+                    {% for genr in book.genre.split(',') %}
+                    <span class="tag-span">{{ genr }}</span>
+                    {% endfor %}
+                </div>
+                <div class="rating">
+                    {% if book.rating %}
+                        <span>{{ book.rating }}</span>
+                        {% for _ in range(book.rating|int) %}
+                            <span class="star">&starf;</span>
+                        {% endfor %}
+                    {% else %}
+                        <span>No ratings</span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h2>Book Description</h2>
+            <p>{{ book.description }}</p>
+        </div>
+    </div>
+</section>
+
+
+	<footer>
+        <p>BookishReads. All rights reserved@2023</p>
+    </footer>
+
+</body>
+</html>

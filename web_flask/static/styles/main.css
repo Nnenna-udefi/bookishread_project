@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-part {
+    background-color: #F7F4FF;
+    padding: 0 3rem; 
+}
+nav.logo {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'Unbounded', cursive;
+    padding-top: 2rem;
+}
+header {
+	box-shadow: 0px 1px 1px 0px rgba(31, 44, 55, 0.05);
+}
+.top {
+    padding: 0 3rem; 
+}
+
+nav.logo span {
+    color: #714AE8;
+}
+
+.hero {
+    padding: 3rem 0;
+    text-align: center;
+    
+}
+.hero h1 {
+    font-size: 72px;
+    font-family: 'Unbounded', cursive;
+    width: 698.13px;
+    height: 180px;
+    line-height: 125%;
+    align-content: center;
+    color: #333333;
+    margin: 0 auto;
+}
+.hero_text1 {
+    color: #714AE8;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+.hero_text2 {
+    width: 706.52px;
+    height: 93px;
+    padding: 2rem 0;
+    margin: 0 auto 2rem;
+}
+.input {
+    background-color: #ffffff;
+    padding: 15px 16px;
+    letter-spacing: 0.16px;
+    color: #383838;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    background: #B3B3B3;
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    width: 50%;
+    height: 50px;
+    left: 2.44px;
+    top: 114px;
+
+}
+.btn:hover, .btn.focus {
+	background: #f3f3f3;
+	color: #B3B3B3;
+	font-weight: bold;
+}
+.subjects {
+    padding: 2rem;
+}
+
+.subjects h1 {
+    text-align: center;
+    color: #333333;
+    font-size: 48px;
+    font-family: 'Unbounded', cursive;
+    padding: 2rem;
+}
+
+.box {
+    color: #4B4B4B;
+    display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+}
+.subjects_block {
+    border: 1px solid #4B4B4B;
+    padding: 1.5rem 0.7rem;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: #ffffff;
+    font-family: 'General Sans';
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto;
+}
+
+.recom-heading {
+    font-size: 32px;
+    color: #333333;
+    font-family: 'Unbounded', cursive;
+    text-align: center;
+    padding: 4rem 3rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    width: 759.063px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.recom-box {
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+}
+.cover-img {
+    width: 50%;
+    height: 50%;
+}
+.recom-box2 {
+    display: flex;
+    margin: 3rem 0;
+    align-items: center;
+    width: 100%;
+}
+.recom-holder {
+    width: 50%;
+    margin: 2rem auto;
+}
+.cover-img {
+    width: 25%;
+    height: 25%;
+}
+li {
+    list-style-type: none;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+a:focus, a:hover {
+	font-weight: bold;
+	background-color: #B3B3B3;
+	color: #fff;
+}
+.recom-content {
+    margin-left: 3rem;
+}
+.title {
+    font-family: 'Unbounded', cursive;
+    padding-bottom: .5rem;
+    font-size: 25px;
+}
+.author {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: .5rem;
+}
+.tags {
+    font-size: 12px;
+    color: #161616;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.tag-span {
+    background-color: #CDD3DA;
+    border: none;
+    border-radius: 7px;
+    padding: .13rem .7rem;
+    font-weight: 500;
+    margin: 1rem .5rem 0 0;
+
+}
+.link {
+    color: #4B4B4B;
+    margin: auto 2rem auto;
+    justify-content: flex-end;
+}
+.publication-date {
+    color: #757575;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 143%;
+}
+.star {
+    width: 16.557px;
+    height: 15.522px;
+    color: #FBBC05;
+}
+.rating {
+    margin: .6rem 0;
+}
+.book_content {
+    display: flex;
+}
+.go_back {
+    color: #373435;
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
+    margin: 2rem 4rem 2rem;
+}
+.cover-img2 {
+    width: 230px;
+    height: 250px;
+}
+.description > h2{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Unbounded', cursive;
+    line-height: 150%;
+    letter-spacing: -0.38px;
+    margin-bottom: 1rem;
+}
+.description > p {
+    color: #5B5A5A;
+    font-size: 16px;
+    display: flex;
+    width: 818px;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+.genre_title, .genre_heading {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    nav.logo {
+        font-size: 15px;
+
+    }
+    .top-part {
+        padding: 0 1rem;
+    }
+    .top {
+        padding: 0 1rem;
+    }
+    .hero_text1 {
+        font-size: 12px;
+    }
+    .hero h1 {
+        font-size: 36px;
+        width: 100%;
+        height: 100%;
+    }
+    .hero_text2 {
+        font-size: 15px;
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+    }
+    .input, .btn{
+        width: 80%;
+    }
+    .subjects h1 {
+        font-size: 28px;
+    }
+    .subjects_block {
+        width: 30%;
+    }
+    .recom-heading {
+        font-size: 20px;
+        width: 339.109px;
+    }
+    .title {
+        font-size: 14px;
+        padding-bottom: 0;
+    }
+    .title2 {
+        font-size: 28px;
+        padding-bottom: .3rem;
+    }
+    .author {
+        font-size: 10px;
+        padding-bottom: 0;
+    }
+    .author2 {
+        font-size: 16px;
+        padding-bottom: .3rem;
+    }
+    .publication-date {
+        font-size: 14px;
+    }
+    .rating {
+        font-size: 12px;
+    }
+    .cover-img2 {
+        padding: 1rem .5rem;
+    }
+    .tags {
+        font-size: 9px;
+    }
+    .recom-box {
+        padding: .3rem;
+    }
+    .recom-content {
+        margin-left: .6rem;
+    }
+    .recom-holder {
+        margin: 2rem auto;
+        width: 80%;
+    }
+    .link {
+        margin: auto 0 auto;
+    }
+    .book_content {
+        display: block;
+    }
+    .recom-box2 {
+        display: block;
+    }
+    .go_back {
+        margin: 1rem .5rem;
+    }
+    .description {
+        padding: .5rem;
+    }
+    .description > p {
+        width: 100%;
+        font-size: 14px;
+    }
+    .genre_title, .genre_heading {
+        margin: 1rem;
+	padding-top: 0;
+}
+.genre_heading {
+	font-size: 20px;
+}
+.genre_title {
+	font-size: 16px;
+
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+    .recom-holder {
+        width: 90%;
+    }
+    .recom-heading {
+        width: 80%;
+    }
+    .book_content {
+        display: block;
+    }
+    .recom-box2 {
+        display: block;
+    }
+    .cover-img2 , .description{
+        padding: 0 3rem;
+    }
+    .description > p {
+        width: 100%;
+    }
+}

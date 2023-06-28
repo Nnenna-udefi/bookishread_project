@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="top-part">
+        <header>
+            <nav class="logo">
+                Bookish<span>Reads</span>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <p class="hero_text1">Are you searching for your next literary adventure?</p>
+            <h1>Discover books you'll love</h1>
+            <p class="hero_text2">Enter five a book you’ve read and liked and the site will analyse our huge database of books to provide book recommendations and suggestions for what to read next.</p>
+
+            <form method="POST" action="/recommendations">
+                <input type="text" id="enter" name="book" placeholder="Enter books" class="input"><br><br>
+                <input type="submit" value="Get Recommendations" class="btn">
+            </form>
+
+        </section>
+    </section>
+    <section class="subjects">
+        <h1>Popular Books</h1>
+        <div class="box">
+    <a href="{{ url_for('genre_recommendations', genre='Fantasy') }}" class="subjects_block">
+        <div>
+            <p>Fantasy</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Childrens') }}" class="subjects_block">
+        <div>
+            <p>Children</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Nonfiction') }}" class="subjects_block">
+        <div>
+            <p>Non Fiction</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Fiction') }}" class="subjects_block">
+        <div>
+            <p>Fiction</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Science Fiction') }}" class="subjects_block">
+        <div>
+            <p>Science Fiction</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Romance') }}" class="subjects_block">
+        <div>
+            <p>Romance</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Adventure') }}" class="subjects_block">
+        <div>
+            <p>Adventure</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Horror') }}" class="subjects_block">
+        <div>
+            <p>Horror</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Literature') }}" class="subjects_block">
+        <div>
+            <p>Literature</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Historical') }}" class="subjects_block">
+        <div>
+            <p>Historical</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Supernatural') }}" class="subjects_block">
+        <div>
+            <p>Supernatural</p>
+        </div>
+    </a>
+    <a href="{{ url_for('genre_recommendations', genre='Feminism') }}" class="subjects_block">
+        <div>
+            <p>Feminism</p>
+        </div>
+    </a>
+</div>
+
+    </section>
+
+    <footer>
+        <p>BookishReads. All rights reserved@2023</p>
+    </footer>
+    
+</body>
+</html>
