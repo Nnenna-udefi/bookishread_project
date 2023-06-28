@@ -75,11 +75,4 @@ sos
 soupsieve
 SQLAlchemy
 ssh-import-id
-systemd-python
-threadpoolctl
-tqdm
-Twisted
-typing-extensions
-tzdata
-ubuntu-advantage-tools
 ufw
