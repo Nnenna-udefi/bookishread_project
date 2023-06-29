@@ -14,7 +14,7 @@ This is a flask app built with python
 - Install all the requirements using : ```pip install requirements.txt```
 - Code could be run with
 ```
-heroku local web`
+heroku local web
 # or
 gunicorn web_flask.app:app
 ```
