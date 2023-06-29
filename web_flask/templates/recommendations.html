@@ -24,7 +24,8 @@
         <ul>
 		{% for book in recommendations %}
 		<li>
-			<div class="recom-box">
+			<div>
+			<a href="/recommendations/book/{{ book.id }}" class="recom-box">
 				<img src="{{ book.cover_image_url }}" alt="cover-img", class="cover-img">
 				<div class="recom-content">
 					<h1 class="title">{{ book.title }}</h1>
@@ -35,9 +36,8 @@
 						{% endfor %}
 					</div>
 				</div>
-				<div class="link">
-					<a href="/recommendations/book/{{ book.id }}" class="next">&gt</a>
-				</div>
+				<div class="link">&gt</div>
+				</a>
 			</div>
 		</li>
 		{% endfor %}

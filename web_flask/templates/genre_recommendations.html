@@ -24,20 +24,20 @@
         <ul>
             {% for index, book in books.iterrows() %}
             <li>
-                <div class="recom-box">
-                    <img src="{{ book.cover_image_url }}" alt="cover-img", class="cover-img">
-                    <div class="recom-content">
-                        <h1 class="title">{{ book['title'] }}</h1>
-                        <p class="author">{{ book['author'] }}</p>
-                        <div class="tags">
-                            {% for genr in book['genre'].split(',') %}
-                            <span class="tag-span">{{ genr }}</span>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="link">
-                        <a href="/recommendations/book/{{ book.id }}">&gt</a>
-                    </div>
+                <div>
+			<a href="/recommendations/book/{{ book.id }}" class='recom-box'>
+                    		<img src="{{ book.cover_image_url }}" alt="cover-img", class="cover-img">
+                    		<div class="recom-content">
+                        	<h1 class="title">{{ book['title'] }}</h1>
+                        	<p class="author">{{ book['author'] }}</p>
+                        	<div class="tags">
+                            		{% for genr in book['genre'].split(',') %}
+                            		<span class="tag-span">{{ genr }}</span>
+                            		{% endfor %}
+                        	</div>
+                    		</div>
+                    		<div class="link">&gt</div>
+			</a>
                 </div>
             </li>
             {% endfor %}
