@@ -1,5 +1,6 @@
-# bookishread_project
-A web app that allows users to input the title of a book they have read and gives recommendations based on genre
+# Bookishread_project
+A web app that allows users to input the title of a book they have read and gives recommendations based on genre. There is also a popular books section that recommends a list of books based on the genre clicked on.
+
 This is a flask app built with python
 **Frontend:** HTML, CSS
 **Backend:** python, flask, Jinja
@@ -24,16 +25,12 @@ gunicorn web_flask.app:app
   - It is a numerical value ranges between zero to one which helps to determine how much two items are similar to each other on a scale of zero to one. This similarity score is obtained measuring the similarity between the text details of both of the items. So, similarity score is the measure of similarity between given text details of two items. This can be done by cosine-similarity.
  
 ## Glimpse of the web app
-![Screenshot of the home page]![Screen Shot 2023-06-29 at 09 55 22](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/9e63923e-5c6f-4c0d-a0c2-41d0357f94aa)
-)
-![Screenshot of the popular books section](![Screen Shot 2023-06-29 at 09 55 31](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/cf9e7d3c-ab3f-4d46-8d92-ff5395235fbd)
-)
-![Screenshot of the recommendations page](![Screen Shot 2023-06-29 at 09 55 49](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/dfeada40-8277-4270-ac90-e3c1b0ab08b9)
-)
-![Screenshot of the book details page](![Screen Shot 2023-06-29 at 09 55 54](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/14b1b350-7c6a-41e8-ac4f-4e1398d36fea)
-)
+Home page ![Screen Shot 2023-06-29 at 09 55 22](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/9e63923e-5c6f-4c0d-a0c2-41d0357f94aa)
+Popular books section![Screen Shot 2023-06-29 at 09 55 31](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/cf9e7d3c-ab3f-4d46-8d92-ff5395235fbd)
+Recommendations page![Screen Shot 2023-06-29 at 09 55 49](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/dfeada40-8277-4270-ac90-e3c1b0ab08b9)
+Book details page![Screen Shot 2023-06-29 at 09 55 54](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/14b1b350-7c6a-41e8-ac4f-4e1398d36fea)
 ## Deployment
 Deployed locally with heroku
-Deployed gloally with render (https://render.com/)
+and Deployed globally with render (https://render.com/)
 - Render is the faster way to host your web apps and it does require verification of card details
 - Deployment link : https://bookishreads.onrender.com/
