@@ -6,8 +6,8 @@ A web app that allows users to input the title of a book they have read and give
 
 
 This is a flask app built with python
-**Frontend:** HTML, CSS
-**Backend:** python, flask, Jinja
+- **Frontend:** HTML, CSS
+- **Backend:** python, flask, Jinja
 
 # Getting Started
 - Clone the repository in your local device.
