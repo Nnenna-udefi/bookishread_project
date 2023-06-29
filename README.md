@@ -1,5 +1,7 @@
 # Bookishread_project
 A web app that allows users to input the title of a book they have read and gives recommendations based on genre. There is also a popular books section that recommends a list of books based on the genre clicked on.
+![bookread_logo](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/8046bafa-d8f4-4a06-bc7f-0dce357c87a5)
+
 
 This is a flask app built with python
 **Frontend:** HTML, CSS
@@ -25,10 +27,14 @@ gunicorn web_flask.app:app
   - It is a numerical value ranges between zero to one which helps to determine how much two items are similar to each other on a scale of zero to one. This similarity score is obtained measuring the similarity between the text details of both of the items. So, similarity score is the measure of similarity between given text details of two items. This can be done by cosine-similarity.
  
 ## Glimpse of the web app
-Home page ![Screen Shot 2023-06-29 at 09 55 22](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/9e63923e-5c6f-4c0d-a0c2-41d0357f94aa)
-Popular books section![Screen Shot 2023-06-29 at 09 55 31](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/cf9e7d3c-ab3f-4d46-8d92-ff5395235fbd)
-Recommendations page![Screen Shot 2023-06-29 at 09 55 49](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/dfeada40-8277-4270-ac90-e3c1b0ab08b9)
-Book details page![Screen Shot 2023-06-29 at 09 55 54](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/14b1b350-7c6a-41e8-ac4f-4e1398d36fea)
+Home page ![bookrishread_home](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/65ec14b2-6411-4179-a071-bc2075ab3d13)
+
+Popular books section ![popular_books](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/c5eb803d-ab5a-42ee-961b-3b69de9a4724)
+
+Recommendations page ![bookishread_recommendations](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/086fd46a-c905-4bd0-9dae-dc7aecc81eec)
+
+Book details page ![bookishread_bookdetails](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/6b98f10b-ea5b-4c3c-a071-dab99c94916f)
+
 ## Deployment
 Deployed locally with heroku
 and Deployed globally with render (https://render.com/)
