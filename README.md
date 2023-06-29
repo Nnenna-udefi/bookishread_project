@@ -1,5 +1,7 @@
 # Bookishread_project
 A web app that allows users to input the title of a book they have read and gives recommendations based on genre. There is also a popular books section that recommends a list of books based on the genre clicked on.
+
+
 ![bookread_logo](https://github.com/Nnenna-udefi/bookishread_project/assets/68693000/8046bafa-d8f4-4a06-bc7f-0dce357c87a5)
 
 
