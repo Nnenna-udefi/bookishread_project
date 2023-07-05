@@ -50,10 +50,10 @@ def recommendations():
             # Find the index of the book in the similarity dataframe
             book_index = similarity_df.index.get_loc(book_input)
 
-            # Get the top 10 most similar books to the input book
-            top_10 = similarity_df.iloc[book_index].sort_values(ascending=False)[1:11]
-            # Retrieve the book details based on the top 10 similar book titles
-            recommendations_df = books.loc[books['title'].isin(top_10.index)]
+            # Get the top 15 most similar books to the input book
+            top_15 = similarity_df.iloc[book_index].sort_values(ascending=False)[1:16]
+            # Retrieve the book details based on the top 15 similar book titles
+            recommendations_df = books.loc[books['title'].isin(top_15.index)]
             # convert the DataFrame to a list of dictionaries 
             recommendations = recommendations_df.to_dict(orient='records')
                 
