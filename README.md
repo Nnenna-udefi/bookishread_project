@@ -45,3 +45,7 @@ and Deployed globally with render (https://render.com/)
 
 ## Authors
 Nnenna Miriam Udefi
+## License
+MIT License
+
+Copyright (c) 2023 Nnenna Udefi
