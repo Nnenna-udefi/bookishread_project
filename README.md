@@ -42,3 +42,6 @@ Deployed locally with heroku
 and Deployed globally with render (https://render.com/)
 - Render is the faster way to host your web apps and it does require verification of card details
 - Deployment link : https://bookishreads.onrender.com/
+
+## Authors
+Nnenna Miriam Udefi
