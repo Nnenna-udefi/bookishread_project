@@ -1,7 +1,7 @@
 # Import the required packages
 #!/usr/bin/python3
 """Flask app for book recommendation system"""
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
@@ -35,6 +35,17 @@ similarity_df = pd.DataFrame(cosine_similarity_matrix, index=books['title'], col
 def home():
     """Route renders the home page"""
     return render_template('home.html')
+
+
+@app.route('/autocomplete', methods=['POST'])
+def autocomplete():
+    book_input = request.form.get('book')
+    if book_input and books is not None:
+        # Filter the books DataFrame to get similar book titles based on the user's input
+        similar_books = books[books['title'].str.contains(book_input, case=False)]['title'].tolist()
+        return jsonify(similar_books)
+    else:
+        return jsonify([])  # Return an empty list if no suggestions are available
 
 
 @app.route('/recommendations', methods=['POST'])
