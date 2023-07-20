@@ -29,7 +29,7 @@
             <div class="recom-content">
                 <h1 class="title2">{{ book.title }}</h1>
                 <p class="author2">{{ book.author }}</p>
-                <p class="publication-date">{{ book.publication_date }}</p>
+                <p class="publication-date">Published: {{ book.publication_date }}</p>
                 <div class="tags">
                     {% for genr in book.genre.split(',') %}
                     <span class="tag-span">{{ genr }}</span>
