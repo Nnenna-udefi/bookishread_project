@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genre Recommendation</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/boooooks-logo.png') }}" type="image/icon type">
+    <title>Bookishreads Genre Recommendation</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
 <body>
     <header>
         <nav class="logo top">
+		<img src="{{ url_for('static', filename='images/boooooks-logo.png') }}" alt="logo" class="img-logo" />
 		<a href="/">
             	Bookish<span>Reads</span>
 		</a>
