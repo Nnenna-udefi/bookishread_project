@@ -95,20 +95,20 @@ nav.logo span {
 .subjects h1 {
     text-align: center;
     color: #333333;
-    font-size: 48px;
+    font-size: 34px;
     font-family: 'Unbounded', cursive;
     padding: 2rem;
 }
 
 .box {
-    color: #4B4B4B;
+    color: #4E4E4E;
     display: flex;
   flex-wrap: wrap;
   gap: 12px;
   padding: 0;
 }
 .subjects_block {
-    border: 1px solid #4B4B4B;
+    border: 1px solid #b8b6b6;
     padding: 1.5rem 0.7rem;
     width: 25%;
     margin: 0 auto;
@@ -175,6 +175,8 @@ a {
 	font-weight: bold;
 	background-color: #b6a1f7;
 	color: #fff;
+	text-transform: uppercase;
+	border: none;
 }
 .recom-content {
     margin-left: 3rem;
