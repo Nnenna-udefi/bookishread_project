@@ -280,8 +280,9 @@ a {
     color: #fff;
 }
 .fa {
-    margin-right: .5rem;
+	margin-right: .5rem;
 	color: #fff;
+	margin-top: 1rem;
 }
 @media only screen and (max-width: 600px) {
     nav.logo {
